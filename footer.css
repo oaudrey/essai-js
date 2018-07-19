@@ -1,0 +1,50 @@
+/* ----------------------- Section Footer ----------------------- */
+
+#footer
+{
+    height: 140px;
+    background-color: #003366;
+    border-top: solid 5px #B0C4DE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer p 
+{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 5px;
+}
+
+.time 
+{
+    background-color: #003366;
+    border: solid 1px #B0C4DE;
+    padding: 2px 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+.annuler {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.annuler {
+    border: solid 2px #003366;
+    background-color: #B0C4DE;
+    color: white;
+}
+
+.annuler {
+    padding: 3px 10px;
+    margin: 8px;
+}
+

@@ -1,0 +1,116 @@
+/* ---------------------- Section Map --------------------- */
+h2 
+{
+    text-align: center;
+    font-size: 30px;
+    color: #514640;
+    margin: 0;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+#map-reservation 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#map 
+{
+        height: 520px;
+        width: 330%;
+        margin-top: -194%;
+        border: solid 2px #003366;
+        margin-left: 100%;
+        margin-bottom: 50px;
+    }
+
+.info-station, .reservation
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info-station, .reservation 
+{
+    height: 250px;
+    width: 70%;
+    margin: 20px;
+    margin-left: 20%;
+    color: white;
+    background-color: #003366;
+    overflow: hidden;
+    display: block;
+}
+
+#map-reservation h3 
+{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #B0C4DE;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.station-nom
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0; padding-top: 0;
+    text-align: center;
+}
+
+.station-adresse, .disponibilite-velo
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0; padding-top: 0;
+    margin: 10px;
+    text-align: center;
+}
+
+.reservation-bouton
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0; padding-top: 0;
+    margin: 10px;
+    margin-left: 50px;
+    text-align: center;
+
+}
+
+#map-reservation button
+{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.info-station button {
+    margin-top: 50px;
+}
+
+.info-station button,
+.reservation button 
+{
+    border: solid 2px #003366;
+    background-color: #B0C4DE;
+    color: white;
+}
+
+#effacer {
+    color: #556270;
+    background-color: white;
+    border: solid 2px #45505b;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
