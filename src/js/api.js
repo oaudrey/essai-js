@@ -10,6 +10,3 @@
 
   L.marker([45.764043,4.835658999999964]).addTo(mymap)
     .bindPopup("<b>Bonjour Lyon !</b><br />").openPopup();
-
-// Variable d'environnement.
-console.log(process.env.API_KEY);
