@@ -4,9 +4,9 @@ var Slider = {
     slideIndex: 0,
 
     list: function () {
-    	Slider.slideInProgress();
-    	Slider.slideAfter();
-    	Slider.slideBefore();
+        Slider.slideInProgress();
+        Slider.slideAfter();
+        Slider.slideBefore();
         Slider.slideAuto();
         Slider.playAutoClick();
         Slider.nextSlideOnClick();
@@ -22,7 +22,7 @@ var Slider = {
         slide.css('display', 'flex');
     },
 
-	// Définir la diapositive suivante comme diapositive actuelle
+    // Définir la diapositive suivante comme diapositive actuelle
     slideAfter: function () {
         var slides = $('.etape');
         var slidesNumber = slides.length;
@@ -32,7 +32,7 @@ var Slider = {
         }
     },
 
-	// Définir la diapositive précédente comme la diapositive actuelle
+    // Définir la diapositive précédente comme la diapositive actuelle
     slideBefore: function () {
         var slides = $('.etape');
         var slidesNumber = slides.length;
@@ -42,7 +42,7 @@ var Slider = {
         }
     },
 
-	// Fonction de glissière automatique et contrôlable
+    // Fonction de glissière automatique et contrôlable
     slideAuto: function () {
         var play = $('.next');
         play.click(function () {
@@ -63,7 +63,7 @@ var Slider = {
         play.trigger('click');
     },
 
-	// suivant, cliquez sur le bouton ">"
+    // suivant, cliquez sur le bouton ">"
     nextSlideOnClick: function () {
         var next = $('.next');
         next.click(function () {
@@ -72,7 +72,7 @@ var Slider = {
         });
     },
 
-	// slide précédente cliquer sur le bouton "<"
+    // slide précédente cliquer sur le bouton "<"
     prevSlideOnClick: function () {
         var prev = $('.prev');
         prev.click(function () {
@@ -81,7 +81,7 @@ var Slider = {
         });
     },
 
-	// diapositive précédente / suivante avec clavier
+    // diapositive précédente / suivante avec clavier
     keypressSlide: function () {
         $('body').keydown(function (e) {
             if (e.which === 39) {
