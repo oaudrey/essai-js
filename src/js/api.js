@@ -8,20 +8,6 @@
     id: 'mapbox.streets'
   }).addTo(mymap);
 
-  L.marker([45.7712918,4.828083099999958]).addTo(mymap)
-    .bindPopup("<b> 1er arrondissement de Lyon.</b><br />").openPopup();
-
-  L.marker([45.7699424,4.80371839999998]).addTo(mymap)
-    .bindPopup("<b>9ème arrondissement de Lyon.</b><br />").openPopup();
-
-
-  L.marker([45.7477113,4.824099899999965]).addTo(mymap)
-    .bindPopup("<b>2ème arrondissement de Lyon.</b><br />").openPopup();
-
-
-  L.marker([45.78095219999999,4.824349100000063]).addTo(mymap)
-    .bindPopup("<b>4ème arrondissement de Lyon.</b><br />").openPopup();
-
 
 // To Do
 // Créer des objets pour chaque station de vélov

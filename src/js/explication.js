@@ -49,7 +49,7 @@ var Slider = {
             var timer = setInterval(function () {
                 Slider.slideAfter();
                 Slider.slideInProgress();
-            }, 20000);
+            }, 5000);
             var stop = $('.prev');
             stop.click(function () {
                 clearInterval(timer);
