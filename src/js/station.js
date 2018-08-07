@@ -50,16 +50,6 @@ mymap.on('click', onMymapClick);
 function onMymapClick(e) {
   console.log(e.espaceDispo);  
   console.log(e.nombreVelo);  
-
-StationVelov.forEach(function(element) {
-  console.log(element);
-  console.log(element.espaceDispo);
-  console.log(element.nombreVelo);
-
-L.marker([element.espaceDispo, element.nombreVelo], {icon: Icon}).addTo(mymap);
-
-});
-
 };
 
 
