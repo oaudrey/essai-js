@@ -16,12 +16,7 @@ var stationVelov4 = new StationVelov (45.78095219999999,4.824349100000063,30,2);
 // par exemple:
 // var StationVelov = [StationVelov1, StationVelov2, etc...]
 
-var StationVelov =['stationVelov1', 'stationVelov2', 'stationVelov3', 'stationVelov4'];
-
-L.marker([stationVelov1.latitude,stationVelov1.longitude]).addTo(mymap);
-L.marker([stationVelov2.latitude,stationVelov2.longitude]).addTo(mymap);
-L.marker([stationVelov3.latitude,stationVelov3.longitude]).addTo(mymap);
-L.marker([stationVelov4.latitude,stationVelov4.longitude]).addTo(mymap);
+var StationVelov =[stationVelov1, stationVelov2, stationVelov3, stationVelov4];
 
 // Ajout d'un icone
 var Icon = L.icon({
@@ -50,17 +45,22 @@ L.marker([element.latitude, element.longitude], {icon: Icon}).addTo(mymap);
 // Je te laisse chercher sur internet comment faire
 //  Essaie de googeliser ça en mettant de l'anglais de préférence ;)
 
-mymap.on('click', addMarker);
- 
-function addMarker(e){
-  var newMarker = new L.marker(espaceDispo,nombreVelo).addTo(mymap);
-}
+mymap.on('click', onMymapClick);
 
-newMarker.forEach(function(element){
-	console.log(element.espaceDispo);
-	console.log(element.nombreVelo);
-})
+function onMymapClick(e) {
+  console.log(e.espaceDispo);  
+  console.log(e.nombreVelo);  
 
+StationVelov.forEach(function(element) {
+  console.log(element);
+  console.log(element.espaceDispo);
+  console.log(element.nombreVelo);
+
+L.marker([element.espaceDispo, element.nombreVelo], {icon: Icon}).addTo(mymap);
+
+});
+
+};
 
 
 
