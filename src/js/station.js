@@ -45,11 +45,10 @@ L.marker([element.latitude, element.longitude], {icon: Icon}).addTo(mymap);
 // Je te laisse chercher sur internet comment faire
 //  Essaie de googeliser ça en mettant de l'anglais de préférence ;)
 
-mymap.on('click', onMymapClick);
+mymap.on('click', onMymapClick());
 
-function onMymapClick(e) {
-  console.log(e.espaceDispo);  
-  console.log(e.nombreVelo);  
+function onMymapClick() {
+  console.log($(this));
 };
 
 
