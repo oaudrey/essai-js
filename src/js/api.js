@@ -8,7 +8,6 @@
     id: 'mapbox.streets'
   }).addTo(mymap);
 
-
 // To Do
 // Créer des objets pour chaque station de vélov
 // Quand on clique sur une station afficher les places disponibles
