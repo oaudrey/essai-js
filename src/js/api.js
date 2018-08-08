@@ -13,3 +13,6 @@
 // Quand on clique sur une station afficher les places disponibles
 // test
 
+function initMap() {
+  mymap.initVelov(45.764043,4.835658999999964, "https://api.jcdecaux.com/vls/v1/stations?contract=Lyon&apiKey=6d2841aefdf734a6dac8cf31043e3a556617a050");
+}
